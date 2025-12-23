@@ -1,0 +1,15 @@
+{
+  "keys": {
+    "fpapi_jRVt_BAOoj8PFWaIM3MiphLCPIQoGVuQcbK3nVCjqmY": {
+      "name": "admin",
+      "created_at": "2025-07-30T22:54:57.509941",
+      "active": true
+    }
+  },
+  "metadata": {
+    "fpapi_jRVt_BAOoj8PFWaIM3MiphLCPIQoGVuQcbK3nVCjqmY": {
+      "tier": "premium",
+      "rate_limit": "1000 per hour"
+    }
+  }
+}

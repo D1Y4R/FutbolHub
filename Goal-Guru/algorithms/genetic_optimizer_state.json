@@ -1,0 +1,25 @@
+{
+  "generation": 49,
+  "best_individual": {
+    "weights": {
+      "poisson": 0.2122871255528382,
+      "dixon_coles": 0.20945016265858582,
+      "xgboost": 0.13908848763950551,
+      "monte_carlo": 0.128612692681595,
+      "crf": 0.1803949313928525,
+      "neural_network": 0.13016660007462313
+    },
+    "fitness": 0.40800436406053436
+  },
+  "adaptive_state": {
+    "mutation_rate": 0.22052756718749994,
+    "crossover_rate": 0.8,
+    "stagnation_counter": 0
+  },
+  "config": {
+    "population_size": 30,
+    "elite_size": 6,
+    "max_generations": 50
+  },
+  "timestamp": "2025-09-28T18:39:48.591591"
+}

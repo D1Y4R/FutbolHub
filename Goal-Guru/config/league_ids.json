@@ -1,0 +1,80 @@
+{
+  "uefa_competitions": {
+    "champions_league": 3,
+    "europa_league": 4,
+    "conference_league": 683
+  },
+  "elite_leagues": {
+    "premier_league": 152,
+    "la_liga": 302,
+    "serie_a": 207,
+    "bundesliga": 175,
+    "ligue_1": 168
+  },
+  "strong_leagues": {
+    "eredivisie": 143,
+    "primeira_liga": 266,
+    "championship": 153
+  },
+  "mid_tier_leagues": {
+    "super_lig": 322,
+    "super_lig_old": 237,
+    "belgian_pro_league": 63,
+    "scottish_premiership": 283,
+    "austrian_bundesliga": 56,
+    "swiss_super_league": 286
+  },
+  "lower_leagues": {
+    "mls": 332,
+    "league_one": 154,
+    "league_two": 145
+  },
+  "league_strength_scores": {
+    "3": 100,
+    "4": 95,
+    "683": 90,
+    "152": 100,
+    "302": 98,
+    "207": 97,
+    "175": 96,
+    "168": 94,
+    "143": 85,
+    "266": 82,
+    "153": 78,
+    "322": 55,
+    "237": 55,
+    "63": 70,
+    "283": 65,
+    "56": 68,
+    "286": 72,
+    "332": 60,
+    "154": 50,
+    "145": 40
+  },
+  "league_names_to_ids": {
+    "UEFA Champions League": 3,
+    "UEFA Champions League - League Stage": 3,
+    "UEFA Europa League": 4,
+    "UEFA Conference League": 683,
+    "Premier League": 152,
+    "La Liga": 302,
+    "Laliga": 302,
+    "Serie A": 207,
+    "Bundesliga": 175,
+    "Ligue 1": 168,
+    "Süper Lig": 322,
+    "Super Lig": 322,
+    "Championship": 153,
+    "Eredivisie": 143,
+    "Primeira Liga": 266
+  },
+  "team_league_fallback": {
+    "192": 322,
+    "609": 322,
+    "84": 152,
+    "34": 152,
+    "72": 175,
+    "76": 302,
+    "150": 207
+  }
+}

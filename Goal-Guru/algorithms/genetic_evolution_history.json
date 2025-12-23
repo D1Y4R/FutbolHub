@@ -1,0 +1,92 @@
+[
+  {
+    "generation": 0,
+    "best_fitness": 0.4054920451694156,
+    "average_fitness": 0.16089502622802157,
+    "diversity": 0.08288743041904985,
+    "mutation_rate": 0.1,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:47.614343"
+  },
+  {
+    "generation": 10,
+    "best_fitness": 0.40671608233358586,
+    "average_fitness": 0.1762435738712949,
+    "diversity": 0.028679789104199407,
+    "mutation_rate": 0.14429475067562503,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:47.687418"
+  },
+  {
+    "generation": 20,
+    "best_fitness": 0.40671609356258726,
+    "average_fitness": 0.14894114711356518,
+    "diversity": 0.07185242857907116,
+    "mutation_rate": 0.3,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:47.766086"
+  },
+  {
+    "generation": 30,
+    "best_fitness": 0.408004360708727,
+    "average_fitness": 0.10880035946042824,
+    "diversity": 0.054505699172692074,
+    "mutation_rate": 0.3,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:47.870615"
+  },
+  {
+    "generation": 40,
+    "best_fitness": 0.40800436406053436,
+    "average_fitness": 0.12240130921813022,
+    "diversity": 0.0810919998316895,
+    "mutation_rate": 0.3,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:47.999849"
+  },
+  {
+    "generation": 0,
+    "best_fitness": 0.4066271163811916,
+    "average_fitness": 0.10760688727431517,
+    "diversity": 0.08150202088308448,
+    "mutation_rate": 0.285,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:48.098010"
+  },
+  {
+    "generation": 10,
+    "best_fitness": 0.4066271163811916,
+    "average_fitness": 0.09453873356786602,
+    "diversity": 0.08009784753130607,
+    "mutation_rate": 0.26490377821372263,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:48.195037"
+  },
+  {
+    "generation": 20,
+    "best_fitness": 0.4079293481331577,
+    "average_fitness": 0.19005322772447775,
+    "diversity": 0.04536150705547544,
+    "mutation_rate": 0.2126485203391065,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:48.278938"
+  },
+  {
+    "generation": 30,
+    "best_fitness": 0.4079323874249952,
+    "average_fitness": 0.20396618618092024,
+    "diversity": 0.04067297269802681,
+    "mutation_rate": 0.3,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:48.388786"
+  },
+  {
+    "generation": 40,
+    "best_fitness": 0.40793238767586504,
+    "average_fitness": 0.14957520881446568,
+    "diversity": 0.05424692435419541,
+    "mutation_rate": 0.3,
+    "crossover_rate": 0.8,
+    "timestamp": "2025-09-28T18:39:48.484341"
+  }
+]

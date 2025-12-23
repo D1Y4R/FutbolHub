@@ -1,0 +1,1248 @@
+
+/* Search panel styles */
+.search-container {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border: 1px solid #343a40;
+    color: #f8f9fa;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    background-color: #343a40;
+    border-radius: 5px;
+    border: 1px solid #495057;
+}
+
+.input-group .input-group-text {
+    background-color: #343a40;
+    border: none;
+    padding: 12px 15px;
+    color: #f8f9fa;
+}
+
+.input-group .form-control {
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.input-group .input-group-text {
+    background-color: #343a40;
+    border-right: none;
+    padding: 8px 15px;
+    color: #adb5bd;
+}
+
+#leagueSearch, #teamSearch {
+    padding: 8px 15px;
+    border: 1px solid #495057;
+    border-radius: 0 5px 5px 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.input-group .form-control {
+    border-left: none;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.input-group .form-control:focus {
+    border-color: #495057;
+    box-shadow: none;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: #0d6efd;
+}
+
+/* Progress bar minimum genişlik düzeltmesi */
+.progress-bar {
+    min-width: 30px !important; /* Düşük değerlerde de görünsün */
+    position: relative;
+    transition: width 0.3s ease;
+    /* Light yazı tipi ayarları */
+    font-weight: 300 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
+}
+
+/* Tüm progress-bar elementleri için zorunlu light yazı */
+.progress .progress-bar,
+.progress-bar,
+div[class*="progress-bar"] {
+    font-weight: 300 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Çok düşük değerler için özel stil */
+.progress-bar[style*="width: 0%"],
+.progress-bar[style*="width: 1%"],
+.progress-bar[style*="width: 2%"],
+.progress-bar[style*="width: 3%"],
+.progress-bar[style*="width: 4%"],
+.progress-bar[style*="width: 5%"] {
+    min-width: 40px !important;
+    color: #fff !important;
+}
+
+/* Özel progress-bar-container için de düzeltme */
+.progress-bar-container {
+    position: relative;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    height: 20px;
+    overflow: visible !important; /* Taşmaya izin ver */
+}
+
+.progress-bar-fill {
+    min-width: 30px !important;
+    position: relative;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400 !important; /* İnce yazı tipi */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    letter-spacing: 0.3px !important;
+}
+
+/* Tüm progress bar yazıları için agresif ince yazı kuralı */
+.progress-bar *,
+.progress-bar-fill *,
+.progress .progress-bar,
+.progress .progress-bar-fill,
+[class*="progress-bar"] {
+    font-weight: 300 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Custom styles to enhance the dark theme */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-dark);
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.card {
+    background-color: #212529 !important;
+    border: 1px solid #343a40 !important;
+    margin-bottom: 1rem;
+    color: #f8f9fa !important;
+}
+
+.card-header {
+    background-color: #343a40 !important;
+    border-bottom: 1px solid #495057 !important;
+    padding: 0.75rem 1rem;
+    color: white !important;
+}
+
+.card-header h2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: white !important;
+}
+
+.card-body {
+    padding: 1rem;
+    background-color: #212529 !important;
+    color: #d9d9d9 !important;
+}
+
+/* Form elemanları için özel dark stil */
+.form-control, .form-select, .input-group-text {
+    background-color: #343a40 !important;
+    border-color: #495057 !important;
+    color: #f8f9fa !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #343a40 !important;
+    color: white !important;
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.form-label {
+    color: #d9d9d9 !important;
+}
+
+/* İnput placeholder rengi */
+::placeholder {
+    color: #adb5bd !important;
+    opacity: 0.8 !important;
+}
+
+/* Modern Dark Theme Styles for Prediction Cards */
+.prediction-box,
+.htft-prediction-box,
+.betting-box,
+.score-box {
+    background-color: #212529 !important;
+    border-radius: 8px !important;
+    border: 1px solid #343a40 !important;
+    color: #f8f9fa !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.prediction-box:hover,
+.htft-prediction-box:hover,
+.betting-box:hover,
+.score-box:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.prediction-box h4,
+.htft-prediction-box h4,
+.betting-box h4,
+.score-box h4 {
+    color: #f8f9fa !important;
+    border-bottom: 1px solid #495057 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 15px !important;
+    font-weight: 600 !important;
+}
+
+/* Badge ve buton stilleri */
+.badge {
+    padding: 0.4em 0.7em !important;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+}
+
+.btn-dark-custom {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border: 1px solid #495057 !important;
+}
+
+.btn-dark-custom:hover {
+    background-color: #495057 !important;
+    color: #fff !important;
+}
+
+/* Yazı stil iyileştirmeleri */
+.text-white {
+    color: #f8f9fa !important;
+}
+
+.text-muted {
+    color: #adb5bd !important;
+}
+
+/* Tahmin kartları için özel stiller */
+.probability-card {
+    background-color: #343a40 !important;
+    border-radius: 10px !important;
+    padding: 12px !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.probability-value {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    margin-bottom: 5px !important;
+}
+
+/* League section styles */
+.league-section {
+    border-bottom: 1px solid #495057;
+    padding-bottom: 1rem;
+    background-color: #212529 !important;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Takım Detayları Modal Stili */
+.team-stats-modal .modal-content {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+    border: 1px solid #343a40 !important;
+}
+
+.team-stats-modal .modal-header {
+    background-color: #343a40 !important;
+    border-bottom: 1px solid #495057 !important;
+    color: white !important;
+}
+
+.team-stats-modal .modal-body {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+}
+
+.team-stats-modal .list-group-item {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border: 1px solid #495057 !important;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.team-stats-modal .match-teams {
+    font-size: 1rem;
+    color: #e9ecef !important;
+}
+
+.team-stats-modal .match-score {
+    font-size: 1.2rem;
+    color: #ffc107 !important;
+}
+
+.team-stats-modal .btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.league-section:last-child {
+    border-bottom: none;
+}
+
+.league-header {
+    color: #0d6efd;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    background-color: #343a40;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #495057;
+}
+
+/* Match display styles */
+.team-home, .team-away {
+    font-weight: 500;
+    flex: 1;
+    color: #f8f9fa !important;
+}
+
+.team-home {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.team-away {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.score {
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+    color: #f8f9fa !important;
+}
+
+.match-row {
+    background-color: #212529 !important;
+    border: 1px solid #343a40 !important;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    transition: transform 0.2s;
+}
+
+.match-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.match-row .match-time {
+    color: #adb5bd !important;
+}
+
+.match-row .match-actions {
+    margin-top: 0.5rem;
+}
+
+.nav-pills .nav-link {
+    color: #f8f9fa;
+    background-color: #343a40;
+    margin-right: 0.5rem;
+    border: 1px solid #495057;
+    transition: all 0.2s;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #495057;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .team-home, .team-away {
+        font-size: 0.9rem;
+    }
+
+    .score {
+        min-width: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================= */
+/* Modern Takım İstatistikleri Popup Stilleri */
+/* ========================================= */
+.team-stats-modal .modal-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f1419 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-stats-modal .modal-dialog {
+    max-width: 1200px;
+}
+
+.team-stats-modal .nav-tabs {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-stats-modal .nav-link {
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: all 0.3s ease;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.team-stats-modal .nav-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-stats-modal .nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid #0d6efd;
+    color: #fff !important;
+}
+
+/* Modern Maç Kartları */
+.team-stats-modern .match-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.team-stats-modern .match-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.team-stats-modern .stat-box {
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+.team-stats-modern .stat-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.team-stats-modern .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.team-stats-modern .stat-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+}
+
+/* Karşılaştırma Görünümü */
+.comparison-view .progress {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.comparison-view .progress-bar {
+    transition: width 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* Spinner Animasyonları */
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Maç Skoru Badge */
+.match-score .badge {
+    padding: 8px 15px;
+    font-size: 1.1rem;
+}
+
+/* Karşılaştırma görünümü için ek stiller */
+.comparison-view .win-rate-display h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.comparison-view .form-badges {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.comparison-view .goal-stats-section {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-view .stat-item {
+    font-size: 0.9rem;
+}
+
+.comparison-view .vs-divider {
+    opacity: 0.5;
+}
+
+.comparison-view .summary-evaluation {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive için ek stiller */
+@media (max-width: 768px) {
+    .team-stats-modal .modal-dialog {
+        max-width: 100%;
+        margin: 0.5rem;
+    }
+    
+    .team-stats-modal .nav-link {
+        padding: 6px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .team-stats-modal .nav-link i {
+        display: none; /* Mobilde ikonları gizle yer kazanmak için */
+    }
+    
+    .team-stats-modern .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .team-stats-modern .stat-label {
+        font-size: 0.65rem;
+        letter-spacing: 0;
+    }
+    
+    .team-stats-modern .stat-box {
+        padding: 10px 5px;
+    }
+    
+    /* Karşılaştırma görünümü mobil */
+    .comparison-view .win-rate-display h2 {
+        font-size: 1.8rem;
+    }
+    
+    .comparison-view .form-badges .badge {
+        font-size: 0.75rem !important;
+        padding: 4px 6px;
+    }
+    
+    .comparison-view h5 {
+        font-size: 1rem;
+    }
+    
+    .comparison-view .col-5,
+    .comparison-view .col-6 {
+        padding: 0 5px;
+    }
+    
+    .comparison-view .stat-item {
+        font-size: 0.8rem;
+    }
+    
+    .comparison-view .progress {
+        height: 20px !important;
+        font-size: 0.7rem;
+    }
+    
+    .comparison-view small {
+        font-size: 0.7rem;
+    }
+    
+    /* Maç kartları mobil */
+    .team-stats-modern .match-card {
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .team-stats-modern .match-card .badge {
+        font-size: 0.75rem;
+    }
+    
+    .team-stats-modern .match-teams {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   MODERN TEAM STATS POPUP - V2
+   ======================================== */
+
+/* Modal backdrop with blur */
+.team-stats-modal-v2 .modal-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Main Modal Container */
+.team-stats-modal-v2 .modal-content {
+    background: linear-gradient(145deg, #1a1f2e 0%, #0d1117 100%);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6),
+                0 0 40px rgba(99, 102, 241, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+/* Modal Header with Gradient */
+.team-stats-modal-v2 .modal-header {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.25rem 1.5rem;
+}
+
+.team-stats-modal-v2 .modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-stats-modal-v2 .modal-title i {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Close Button */
+.team-stats-modal-v2 .btn-close-modern {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #9ca3af;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.team-stats-modal-v2 .btn-close-modern:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #ef4444;
+    transform: scale(1.05);
+}
+
+/* Modal Body */
+.team-stats-modal-v2 .modal-body {
+    padding: 1.5rem;
+    background: transparent;
+}
+
+/* Modern Tab Navigation */
+.team-stats-modal-v2 .nav-tabs-modern {
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px;
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-stats-modal-v2 .nav-tab-item {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: #9ca3af;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.team-stats-modal-v2 .nav-tab-item:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.05);
+    color: #e5e7eb;
+}
+
+.team-stats-modal-v2 .nav-tab-item.active {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.team-stats-modal-v2 .nav-tab-item i {
+    font-size: 1rem;
+}
+
+/* Loading Spinner */
+.team-stats-modal-v2 .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    min-height: 200px;
+}
+
+.team-stats-modal-v2 .spinner-ring {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(99, 102, 241, 0.2);
+    border-top-color: #6366f1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.team-stats-modal-v2 .loading-text {
+    margin-top: 1rem;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Stats Container */
+.team-stats-modal-v2 .stats-container-v2 {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Team Header Card */
+.team-stats-modal-v2 .team-header-card {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 16px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.team-stats-modal-v2 .team-name-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.team-stats-modal-v2 .team-subtitle {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+/* Match Cards Grid */
+.team-stats-modal-v2 .matches-grid-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Modern Match Card */
+.team-stats-modal-v2 .match-card-v2 {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-stats-modal-v2 .match-card-v2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.team-stats-modal-v2 .match-card-v2.win::before {
+    background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+}
+
+.team-stats-modal-v2 .match-card-v2.loss::before {
+    background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+.team-stats-modal-v2 .match-card-v2.draw::before {
+    background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
+}
+
+.team-stats-modal-v2 .match-card-v2:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+}
+
+.team-stats-modal-v2 .match-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.team-stats-modal-v2 .result-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.team-stats-modal-v2 .result-badge.win {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.team-stats-modal-v2 .result-badge.loss {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.team-stats-modal-v2 .result-badge.draw {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.team-stats-modal-v2 .match-date {
+    color: #6b7280;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.team-stats-modal-v2 .match-teams-v2 {
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.team-stats-modal-v2 .match-score-v2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Stats Summary Section */
+.team-stats-modal-v2 .stats-summary-v2 {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+
+.team-stats-modal-v2 .summary-title {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-stats-modal-v2 .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow: hidden;
+}
+
+.team-stats-modal-v2 .summary-item {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    min-width: 0;
+}
+
+.team-stats-modal-v2 .summary-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.team-stats-modal-v2 .summary-value.win { color: #4ade80; }
+.team-stats-modal-v2 .summary-value.draw { color: #fbbf24; }
+.team-stats-modal-v2 .summary-value.loss { color: #f87171; }
+
+.team-stats-modal-v2 .summary-label {
+    font-size: 0.7rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Comparison View V2 */
+.team-stats-modal-v2 .comparison-container {
+    animation: fadeIn 0.4s ease;
+}
+
+.team-stats-modal-v2 .teams-comparison-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.team-stats-modal-v2 .team-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+}
+
+.team-stats-modal-v2 .team-card.home {
+    border-color: rgba(99, 102, 241, 0.3);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+}
+
+.team-stats-modal-v2 .team-card.away {
+    border-color: rgba(236, 72, 153, 0.3);
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, transparent 100%);
+}
+
+.team-stats-modal-v2 .team-card-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.team-stats-modal-v2 .team-form-badges {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+.team-stats-modal-v2 .form-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.team-stats-modal-v2 .form-badge.w { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.team-stats-modal-v2 .form-badge.d { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.team-stats-modal-v2 .form-badge.l { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+.team-stats-modal-v2 .win-rate-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.team-stats-modal-v2 .win-rate-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+.team-stats-modal-v2 .vs-badge {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Comparison Bars */
+.team-stats-modal-v2 .comparison-section {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.team-stats-modal-v2 .comparison-section-title {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-stats-modal-v2 .comparison-bar-item {
+    margin-bottom: 1.25rem;
+}
+
+.team-stats-modal-v2 .comparison-bar-item:last-child {
+    margin-bottom: 0;
+}
+
+.team-stats-modal-v2 .bar-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.team-stats-modal-v2 .bar-label-text {
+    color: #9ca3af;
+}
+
+.team-stats-modal-v2 .bar-label-values {
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+.team-stats-modal-v2 .comparison-bar-track {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.team-stats-modal-v2 .bar-fill-home {
+    background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+    height: 100%;
+    transition: width 0.6s ease;
+}
+
+.team-stats-modal-v2 .bar-fill-away {
+    background: linear-gradient(90deg, #ec4899 0%, #f472b6 100%);
+    height: 100%;
+    transition: width 0.6s ease;
+}
+
+/* Goal Stats Cards */
+.team-stats-modal-v2 .goal-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.team-stats-modal-v2 .goal-stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.team-stats-modal-v2 .goal-stat-card.home {
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.team-stats-modal-v2 .goal-stat-card.away {
+    border-color: rgba(236, 72, 153, 0.2);
+}
+
+.team-stats-modal-v2 .goal-stat-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.team-stats-modal-v2 .goal-stat-item {
+    text-align: center;
+}
+
+.team-stats-modal-v2 .goal-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-size: 1rem;
+}
+
+.team-stats-modal-v2 .goal-icon.scored {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+}
+
+.team-stats-modal-v2 .goal-icon.conceded {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+.team-stats-modal-v2 .goal-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.team-stats-modal-v2 .goal-label {
+    font-size: 0.7rem;
+    color: #6b7280;
+    text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .team-stats-modal-v2 .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .team-stats-modal-v2 .modal-content {
+        border-radius: 16px;
+    }
+    
+    .team-stats-modal-v2 .nav-tabs-modern {
+        flex-wrap: wrap;
+    }
+    
+    .team-stats-modal-v2 .nav-tab-item {
+        flex: 1 1 auto;
+        min-width: calc(50% - 4px);
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .team-stats-modal-v2 .nav-tab-item:last-child {
+        flex: 1 1 100%;
+    }
+    
+    .team-stats-modal-v2 .teams-comparison-header {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .team-stats-modal-v2 .vs-badge {
+        margin: 0 auto;
+    }
+    
+    .team-stats-modal-v2 .summary-value {
+        font-size: 1.5rem;
+    }
+    
+    .team-stats-modal-v2 .team-name-title {
+        font-size: 1.25rem;
+    }
+    
+    .team-stats-modal-v2 .goal-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
